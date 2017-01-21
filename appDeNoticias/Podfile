@@ -7,5 +7,5 @@ target 'appDeNoticias' do
 
   # Pods for appDeNoticias
 pod 'SwiftyJSON'
-
+pod 'Alamofire'
 end
