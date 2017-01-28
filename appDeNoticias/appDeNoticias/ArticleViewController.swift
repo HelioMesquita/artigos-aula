@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ArticleViewController.swift
 //  appDeNoticias
 //
 //  Created by Sábado on 21/01/17.
@@ -9,10 +9,14 @@
 import UIKit
 import Alamofire
 
-class ViewController: UIViewController {
+class ArticleViewController: UIViewController {
 
     let urlString = "https://newsapi.org/v1/articles?source=techcrunch&apiKey=0126aaf314494c16bb346a34f514d770"
     
+    @IBAction func acaoBotao(_ sender: AnyObject) {
+        LoadingView.showLoading()
+    
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
