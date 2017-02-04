@@ -15,6 +15,11 @@
 		3A471A8D1E33AD9100205CA3 /* Articles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A471A8B1E33AD9100205CA3 /* Articles.swift */; };
 		3A471A8E1E33AD9100205CA3 /* BaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A471A8C1E33AD9100205CA3 /* BaseClass.swift */; };
 		3A6EEC611E33E52400E4599E /* ArtigosRouters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A6EEC601E33E52400E4599E /* ArtigosRouters.swift */; };
+		3A7A53431E462A5D0067B6AC /* ArticlesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A53421E462A5D0067B6AC /* ArticlesStore.swift */; };
+		3A7A53451E462E710067B6AC /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A53441E462E710067B6AC /* Account.swift */; };
+		3A7A53471E4630060067B6AC /* ArticlesAPIStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A53461E4630060067B6AC /* ArticlesAPIStore.swift */; };
+		3A7A53491E4649140067B6AC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A53481E4649140067B6AC /* API.swift */; };
+		3A7A534C1E465B120067B6AC /* ArticlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A534B1E465B120067B6AC /* ArticlesViewModel.swift */; };
 		3AAA75CE1E3CD782007DBB8D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA75CD1E3CD782007DBB8D /* LoadingView.swift */; };
 		3AAA75D11E3CDCAA007DBB8D /* ArticlesDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA75D01E3CDCAA007DBB8D /* ArticlesDataProvider.swift */; };
 		3AAA75D31E3CDCD4007DBB8D /* BaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA75D21E3CDCD4007DBB8D /* BaseProtocol.swift */; };
@@ -36,6 +41,11 @@
 		3A471A8B1E33AD9100205CA3 /* Articles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Articles.swift; sourceTree = "<group>"; };
 		3A471A8C1E33AD9100205CA3 /* BaseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseClass.swift; sourceTree = "<group>"; };
 		3A6EEC601E33E52400E4599E /* ArtigosRouters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtigosRouters.swift; sourceTree = "<group>"; };
+		3A7A53421E462A5D0067B6AC /* ArticlesStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesStore.swift; sourceTree = "<group>"; };
+		3A7A53441E462E710067B6AC /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		3A7A53461E4630060067B6AC /* ArticlesAPIStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesAPIStore.swift; sourceTree = "<group>"; };
+		3A7A53481E4649140067B6AC /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		3A7A534B1E465B120067B6AC /* ArticlesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesViewModel.swift; sourceTree = "<group>"; };
 		3AAA75CD1E3CD782007DBB8D /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		3AAA75D01E3CDCAA007DBB8D /* ArticlesDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesDataProvider.swift; sourceTree = "<group>"; };
 		3AAA75D21E3CDCD4007DBB8D /* BaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseProtocol.swift; sourceTree = "<group>"; };
@@ -94,6 +104,7 @@
 				3AAA75CC1E3CD097007DBB8D /* Helpers */,
 				3A6EEC5D1E33E12E00E4599E /* Network */,
 				3A6EEC5C1E33E12500E4599E /* Manager */,
+				3A7A534A1E465ACF0067B6AC /* ViewModel */,
 				3A6EEC5B1E33E03E00E4599E /* Storyboard */,
 				3A6EEC5A1E33E02E00E4599E /* Models */,
 				3A471A791E33ABEC00205CA3 /* AppDelegate.swift */,
@@ -111,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				3A471A8C1E33AD9100205CA3 /* BaseClass.swift */,
+				3A7A53441E462E710067B6AC /* Account.swift */,
 				3A471A8B1E33AD9100205CA3 /* Articles.swift */,
 			);
 			name = Models;
@@ -135,6 +147,7 @@
 		3A6EEC5D1E33E12E00E4599E /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				3A7A53481E4649140067B6AC /* API.swift */,
 				3A6EEC5F1E33E43E00E4599E /* Store */,
 				3A6EEC5E1E33E41B00E4599E /* Routers */,
 			);
@@ -152,8 +165,18 @@
 		3A6EEC5F1E33E43E00E4599E /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				3A7A53421E462A5D0067B6AC /* ArticlesStore.swift */,
+				3A7A53461E4630060067B6AC /* ArticlesAPIStore.swift */,
 			);
 			name = Store;
+			sourceTree = "<group>";
+		};
+		3A7A534A1E465ACF0067B6AC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3A7A534B1E465B120067B6AC /* ArticlesViewModel.swift */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 		3AAA75CC1E3CD097007DBB8D /* Helpers */ = {
@@ -306,6 +329,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A471A7C1E33ABEC00205CA3 /* ArticleViewController.swift in Sources */,
+				3A7A53431E462A5D0067B6AC /* ArticlesStore.swift in Sources */,
+				3A7A53471E4630060067B6AC /* ArticlesAPIStore.swift in Sources */,
 				3AAA75D11E3CDCAA007DBB8D /* ArticlesDataProvider.swift in Sources */,
 				3AAA75D51E3CE0BF007DBB8D /* ArticleViewController + ArticleDataProviderProtocol.swift in Sources */,
 				3AAA75D31E3CDCD4007DBB8D /* BaseProtocol.swift in Sources */,
@@ -313,10 +338,13 @@
 				3AAA75D91E3CE3E0007DBB8D /* BooksDataProvider.swift in Sources */,
 				3AAA75D71E3CE3CD007DBB8D /* BooksViewController.swift in Sources */,
 				3A471A8D1E33AD9100205CA3 /* Articles.swift in Sources */,
+				3A7A534C1E465B120067B6AC /* ArticlesViewModel.swift in Sources */,
 				3A471A7A1E33ABEC00205CA3 /* AppDelegate.swift in Sources */,
 				3A471A8E1E33AD9100205CA3 /* BaseClass.swift in Sources */,
 				3AAA75DB1E3CE43A007DBB8D /* BooksViewControlller + BooksDataProviderProtocol.swift in Sources */,
 				3A6EEC611E33E52400E4599E /* ArtigosRouters.swift in Sources */,
+				3A7A53491E4649140067B6AC /* API.swift in Sources */,
+				3A7A53451E462E710067B6AC /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

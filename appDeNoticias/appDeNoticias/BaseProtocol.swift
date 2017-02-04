@@ -10,7 +10,7 @@ import Foundation
 
 
 protocol BaseProtocol {
-    func success ()
+    func success (viewModel:ArticlesViewModel)
 
     func fail ()
 

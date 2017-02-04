@@ -10,14 +10,15 @@ import Foundation
 
 
 extension ArticleViewController: ArticlesDataProviderProtocol{
-    
-    func success() {
+    internal func fail() {
         
     }
-    
-    func fail() {
-        
+
+   
+    func success(viewModel: ArticlesViewModel) {
+        print(viewModel)
     }
+    
     
     
 }
