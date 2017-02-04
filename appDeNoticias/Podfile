@@ -9,4 +9,5 @@ target 'appDeNoticias' do
 pod 'SwiftyJSON'
 pod 'Alamofire'
 pod 'ALLoadingView'
+pod "ASProgressHud"
 end

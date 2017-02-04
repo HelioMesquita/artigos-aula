@@ -8,28 +8,22 @@
 
 import Foundation
 import ALLoadingView
+import ASProgressHud
 
 class LoadingView {
     
-    static func showLoading (){
-        ALLoadingView.manager.blurredBackground = true
-        ALLoadingView.manager.showLoadingView(ofType: .messageWithIndicatorAndCancelButton, windowMode: .fullscreen)
-        ALLoadingView.manager.messageText = "Mensagem de texto carregando"
+    // camada abstrata para facilitar a implementacao e substituicao se necessaaria
         
+    static func showLoading (viewzinha:UIView){
         
-        // remover depois
-        ALLoadingView.manager.cancelCallback = {
-            ALLoadingView.manager.hideLoadingView(){
-                print("botao cancelar")
-            }
-        }
-    
+        ASProgressHud.showHUDAddedTo(viewzinha, animated: true, type: .default)
+
+        let SwiftTimer = Timer.scheduledTimer(timeInterval: 5, target:self, selector: Selector("hideLoading"), userInfo: nil, repeats: false)
         
     }
     
-    static func hideLoading (){
-        ALLoadingView.manager.hideLoadingView()
-        
+    static func hideLoading (viewzinha:UIView){
+        ASProgressHud.hideHUDForView(viewzinha, animated: true)
     }
     
     
