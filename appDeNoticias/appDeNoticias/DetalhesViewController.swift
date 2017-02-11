@@ -12,11 +12,11 @@ class DetalhesViewController: UIViewController {
 
     @IBOutlet weak var textViewDetalhes: UITextView!
     
+    var descriptioN:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.textViewDetalhes.text = descriptioN
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,5 +25,7 @@ class DetalhesViewController: UIViewController {
     }
     
 
-  
+    func recebeNoticia(articleDescription:String){
+        self.descriptioN = articleDescription
+    }
 }

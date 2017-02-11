@@ -20,7 +20,10 @@ extension ArticleViewController: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return articles!.numberOfRows
+        guard let artigos = articles?.numberOfRows else{
+            return 0
+        }
+        return artigos
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -35,8 +38,13 @@ extension ArticleViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedRow = indexPath.row
+        print(selectedRow)
         
-        performSegue(withIdentifier: "DetalhesViewController", sender: nil)
+        guard let rowSelected = selectedRow else{
+            return
+        }
+        
+        performSegue(withIdentifier: "DetalhesViewController", sender: rowSelected)
     }
     
     
@@ -45,7 +53,8 @@ extension ArticleViewController: UITableViewDataSource, UITableViewDelegate{
         if segue.identifier == "DetalhesViewController"{
                 let detalhesViewController = segue.destination as! DetalhesViewController
                 articles?.loadArticle(indice: selectedRow!)
-                detalhesViewController.textViewDetalhes.text = articles?.description
+         
+                detalhesViewController.recebeNoticia(articleDescription: (articles?.description)!)
             
             
         }
