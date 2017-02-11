@@ -29,7 +29,8 @@ extension ArticleViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ArticlesCell", for: indexPath) as! CustomCell
         
-        cell.loadCell(recebeArticleViewModel: articles!, index: indexPath.row)
+        articles?.loadArticle(indice: indexPath.row)
+        cell.loadCell(recebeArticleViewModel: articles!)
         
         return cell
     }
@@ -37,13 +38,7 @@ extension ArticleViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedRow = indexPath.row
-        print(selectedRow)
-        
-        guard let rowSelected = selectedRow else{
-            return
-        }
-        
-        performSegue(withIdentifier: "DetalhesViewController", sender: rowSelected)
+        performSegue(withIdentifier: "DetalhesViewController", sender: nil)
     }
     
     

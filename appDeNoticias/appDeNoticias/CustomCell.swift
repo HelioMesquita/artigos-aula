@@ -30,8 +30,7 @@ class CustomCell: UITableViewCell {
     
     
     
-    func loadCell (recebeArticleViewModel:ArticlesViewModel,index:Int){
-        recebeArticleViewModel.loadArticle(indice: index)
+    func loadCell (recebeArticleViewModel:ArticlesViewModel){
         self.newsAuthor.text = recebeArticleViewModel.author
         self.newsTitle.text = recebeArticleViewModel.title
         self.newsImage.image = recebeArticleViewModel.image
