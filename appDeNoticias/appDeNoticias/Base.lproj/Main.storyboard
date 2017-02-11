@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,25 +19,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="54" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7vn-A2-CmP">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="102" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7vn-A2-CmP">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticlesCell" textLabel="NSI-gi-ZOG" rowHeight="54" style="IBUITableViewCellStyleDefault" id="VrM-Kr-dYI">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="54"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticlesCell" rowHeight="102" id="VrM-Kr-dYI" customClass="CustomCell" customModule="appDeNoticias" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="102"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VrM-Kr-dYI" id="oV0-zX-KFM">
-                                            <frame key="frameInset" width="375" height="53"/>
+                                            <frame key="frameInset" width="375" height="102"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NSI-gi-ZOG">
-                                                    <frame key="frameInset" minX="15" width="345" height="53"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HwN-sX-szT">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="64" id="8Pe-yB-IYr"/>
+                                                        <constraint firstAttribute="width" constant="64" id="C1N-JQ-fWK"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aF3-vO-zBc">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="iSO-q2-K5A"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZY7-Ew-u9G">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="HwN-sX-szT" firstAttribute="top" secondItem="oV0-zX-KFM" secondAttribute="topMargin" constant="10" id="74N-sC-Qhw"/>
+                                                <constraint firstItem="aF3-vO-zBc" firstAttribute="top" secondItem="oV0-zX-KFM" secondAttribute="topMargin" constant="10" id="Apu-Y1-bJ2"/>
+                                                <constraint firstItem="aF3-vO-zBc" firstAttribute="leading" secondItem="HwN-sX-szT" secondAttribute="trailing" constant="15" id="HAt-tl-f6j"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="HwN-sX-szT" secondAttribute="bottom" constant="12" id="KCl-hI-U7k"/>
+                                                <constraint firstItem="ZY7-Ew-u9G" firstAttribute="leading" secondItem="HwN-sX-szT" secondAttribute="trailing" constant="15" id="QSf-64-eZt"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ZY7-Ew-u9G" secondAttribute="trailing" constant="34" id="hXi-C6-L12"/>
+                                                <constraint firstItem="HwN-sX-szT" firstAttribute="leading" secondItem="oV0-zX-KFM" secondAttribute="leadingMargin" constant="11" id="iLc-VN-bT8"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="ZY7-Ew-u9G" secondAttribute="bottom" constant="17" id="lEj-3x-A3T"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="aF3-vO-zBc" secondAttribute="trailing" constant="34" id="wnH-0s-Pb4"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.8611536869429981" green="0.89067107222308683" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="newsAuthor" destination="ZY7-Ew-u9G" id="kuX-71-c1k"/>
+                                            <outlet property="newsImage" destination="HwN-sX-szT" id="3IW-hl-mE6"/>
+                                            <outlet property="newsTitle" destination="aF3-vO-zBc" id="vXZ-o7-RqN"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

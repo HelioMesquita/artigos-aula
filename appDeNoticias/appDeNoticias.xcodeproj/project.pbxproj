@@ -20,6 +20,7 @@
 		3A7A53471E4630060067B6AC /* ArticlesAPIStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A53461E4630060067B6AC /* ArticlesAPIStore.swift */; };
 		3A7A53491E4649140067B6AC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A53481E4649140067B6AC /* API.swift */; };
 		3A7A534C1E465B120067B6AC /* ArticlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A534B1E465B120067B6AC /* ArticlesViewModel.swift */; };
+		3AA933571E4F75ED0078373C /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA933561E4F75ED0078373C /* CustomCell.swift */; };
 		3AAA75CE1E3CD782007DBB8D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA75CD1E3CD782007DBB8D /* LoadingView.swift */; };
 		3AAA75D11E3CDCAA007DBB8D /* ArticlesDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA75D01E3CDCAA007DBB8D /* ArticlesDataProvider.swift */; };
 		3AAA75D31E3CDCD4007DBB8D /* BaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA75D21E3CDCD4007DBB8D /* BaseProtocol.swift */; };
@@ -46,6 +47,7 @@
 		3A7A53461E4630060067B6AC /* ArticlesAPIStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesAPIStore.swift; sourceTree = "<group>"; };
 		3A7A53481E4649140067B6AC /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		3A7A534B1E465B120067B6AC /* ArticlesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesViewModel.swift; sourceTree = "<group>"; };
+		3AA933561E4F75ED0078373C /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		3AAA75CD1E3CD782007DBB8D /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		3AAA75D01E3CDCAA007DBB8D /* ArticlesDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesDataProvider.swift; sourceTree = "<group>"; };
 		3AAA75D21E3CDCD4007DBB8D /* BaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseProtocol.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				3A471A8C1E33AD9100205CA3 /* BaseClass.swift */,
 				3A7A53441E462E710067B6AC /* Account.swift */,
 				3A471A8B1E33AD9100205CA3 /* Articles.swift */,
+				3AA933561E4F75ED0078373C /* CustomCell.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				3A7A53431E462A5D0067B6AC /* ArticlesStore.swift in Sources */,
 				3A7A53471E4630060067B6AC /* ArticlesAPIStore.swift in Sources */,
 				3AAA75D11E3CDCAA007DBB8D /* ArticlesDataProvider.swift in Sources */,
+				3AA933571E4F75ED0078373C /* CustomCell.swift in Sources */,
 				3AAA75D51E3CE0BF007DBB8D /* ArticleViewController + ArticleDataProviderProtocol.swift in Sources */,
 				3AAA75D31E3CDCD4007DBB8D /* BaseProtocol.swift in Sources */,
 				3AAA75CE1E3CD782007DBB8D /* LoadingView.swift in Sources */,

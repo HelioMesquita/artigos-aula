@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class ArticlesViewModel{
     // fica todas as regras de negocio
@@ -33,6 +34,14 @@ class ArticlesViewModel{
     var publishedAt:String{
         return (self.currentArticle?.publishedAt)!
     }
+    
+    
+    var image:UIImage{
+        let url = URL(string: (self.currentArticle?.urlToImage)!)
+        let data = try? Data(contentsOf: url!)
+        return UIImage(data: data!)!
+    }
+    
 
     
     var numberOfRows:Int{

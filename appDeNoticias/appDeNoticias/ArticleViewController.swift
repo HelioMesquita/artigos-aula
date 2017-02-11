@@ -24,13 +24,6 @@ class ArticleViewController: UIViewController{
     let dataProvider = ArticlesDataProvider()
     var articles:ArticlesViewModel?
     
-    
-    @IBAction func acaoBotao(_ sender: AnyObject) {
-        LoadingView.showLoading(viewzinha: self.view)
-        
-    }
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
