@@ -17,6 +17,8 @@ extension ArticleViewController: ArticlesDataProviderProtocol{
    
     func success(viewModel: ArticlesViewModel) {
         print(viewModel)
+        articles = viewModel
+        tableView.reloadData()
     }
     
     

@@ -13,10 +13,16 @@ import ASProgressHud
 
 class ArticleViewController: UIViewController{
 
+    
+    var selectedRow:Int?
+    @IBOutlet weak var tableView: UITableView!
+    
+    
+    
     let urlString = "https://newsapi.org/v1/articles?source=techcrunch&apiKey=0126aaf314494c16bb346a34f514d770"
     
     let dataProvider = ArticlesDataProvider()
- 
+    var articles:ArticlesViewModel?
     
     
     @IBAction func acaoBotao(_ sender: AnyObject) {
@@ -28,6 +34,9 @@ class ArticleViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        
         self.dataProvider.delegate = self
         self.dataProvider.getAllArticles()
         

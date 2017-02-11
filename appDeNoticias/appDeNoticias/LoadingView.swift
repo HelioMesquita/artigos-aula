@@ -18,7 +18,7 @@ class LoadingView {
         
         ASProgressHud.showHUDAddedTo(viewzinha, animated: true, type: .default)
 
-        let SwiftTimer = Timer.scheduledTimer(timeInterval: 5, target:self, selector: Selector("hideLoading"), userInfo: nil, repeats: false)
+//        let SwiftTimer = Timer.scheduledTimer(timeInterval: 5, target:self, selector: Selector("hideLoading"), userInfo: nil, repeats: false)
         
     }
     

@@ -24,9 +24,9 @@
 		3AAA75D11E3CDCAA007DBB8D /* ArticlesDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA75D01E3CDCAA007DBB8D /* ArticlesDataProvider.swift */; };
 		3AAA75D31E3CDCD4007DBB8D /* BaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA75D21E3CDCD4007DBB8D /* BaseProtocol.swift */; };
 		3AAA75D51E3CE0BF007DBB8D /* ArticleViewController + ArticleDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA75D41E3CE0BF007DBB8D /* ArticleViewController + ArticleDataProviderProtocol.swift */; };
-		3AAA75D71E3CE3CD007DBB8D /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA75D61E3CE3CD007DBB8D /* BooksViewController.swift */; };
 		3AAA75D91E3CE3E0007DBB8D /* BooksDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA75D81E3CE3E0007DBB8D /* BooksDataProvider.swift */; };
-		3AAA75DB1E3CE43A007DBB8D /* BooksViewControlller + BooksDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA75DA1E3CE43A007DBB8D /* BooksViewControlller + BooksDataProviderProtocol.swift */; };
+		3AD91C9A1E4F679D00966A8C /* ExtensionArticlesViewController+TableViewDataSource+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD91C991E4F679D00966A8C /* ExtensionArticlesViewController+TableViewDataSource+TableViewDelegate.swift */; };
+		3AD91C9C1E4F6A8A00966A8C /* DetalhesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD91C9B1E4F6A8A00966A8C /* DetalhesViewController.swift */; };
 		45B9C782920ECB8A239B70E3 /* Pods_appDeNoticias.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE3BFB241623CF24B4A37A66 /* Pods_appDeNoticias.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,9 +50,9 @@
 		3AAA75D01E3CDCAA007DBB8D /* ArticlesDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesDataProvider.swift; sourceTree = "<group>"; };
 		3AAA75D21E3CDCD4007DBB8D /* BaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseProtocol.swift; sourceTree = "<group>"; };
 		3AAA75D41E3CE0BF007DBB8D /* ArticleViewController + ArticleDataProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ArticleViewController + ArticleDataProviderProtocol.swift"; sourceTree = "<group>"; };
-		3AAA75D61E3CE3CD007DBB8D /* BooksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
 		3AAA75D81E3CE3E0007DBB8D /* BooksDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksDataProvider.swift; sourceTree = "<group>"; };
-		3AAA75DA1E3CE43A007DBB8D /* BooksViewControlller + BooksDataProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BooksViewControlller + BooksDataProviderProtocol.swift"; sourceTree = "<group>"; };
+		3AD91C991E4F679D00966A8C /* ExtensionArticlesViewController+TableViewDataSource+TableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExtensionArticlesViewController+TableViewDataSource+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		3AD91C9B1E4F6A8A00966A8C /* DetalhesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalhesViewController.swift; sourceTree = "<group>"; };
 		5927930728FD65CD3796D84B /* Pods-appDeNoticias.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appDeNoticias.debug.xcconfig"; path = "Pods/Target Support Files/Pods-appDeNoticias/Pods-appDeNoticias.debug.xcconfig"; sourceTree = "<group>"; };
 		72C630AECF359F70F8B602E2 /* Pods-appDeNoticias.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appDeNoticias.release.xcconfig"; path = "Pods/Target Support Files/Pods-appDeNoticias/Pods-appDeNoticias.release.xcconfig"; sourceTree = "<group>"; };
 		FE3BFB241623CF24B4A37A66 /* Pods_appDeNoticias.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_appDeNoticias.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,11 +109,11 @@
 				3A6EEC5A1E33E02E00E4599E /* Models */,
 				3A471A791E33ABEC00205CA3 /* AppDelegate.swift */,
 				3A471A7B1E33ABEC00205CA3 /* ArticleViewController.swift */,
+				3AAA75D41E3CE0BF007DBB8D /* ArticleViewController + ArticleDataProviderProtocol.swift */,
+				3AD91C991E4F679D00966A8C /* ExtensionArticlesViewController+TableViewDataSource+TableViewDelegate.swift */,
 				3A471A801E33ABED00205CA3 /* Assets.xcassets */,
 				3A471A851E33ABED00205CA3 /* Info.plist */,
-				3AAA75D41E3CE0BF007DBB8D /* ArticleViewController + ArticleDataProviderProtocol.swift */,
-				3AAA75D61E3CE3CD007DBB8D /* BooksViewController.swift */,
-				3AAA75DA1E3CE43A007DBB8D /* BooksViewControlller + BooksDataProviderProtocol.swift */,
+				3AD91C9B1E4F6A8A00966A8C /* DetalhesViewController.swift */,
 			);
 			path = appDeNoticias;
 			sourceTree = "<group>";
@@ -336,12 +336,12 @@
 				3AAA75D31E3CDCD4007DBB8D /* BaseProtocol.swift in Sources */,
 				3AAA75CE1E3CD782007DBB8D /* LoadingView.swift in Sources */,
 				3AAA75D91E3CE3E0007DBB8D /* BooksDataProvider.swift in Sources */,
-				3AAA75D71E3CE3CD007DBB8D /* BooksViewController.swift in Sources */,
+				3AD91C9C1E4F6A8A00966A8C /* DetalhesViewController.swift in Sources */,
 				3A471A8D1E33AD9100205CA3 /* Articles.swift in Sources */,
 				3A7A534C1E465B120067B6AC /* ArticlesViewModel.swift in Sources */,
 				3A471A7A1E33ABEC00205CA3 /* AppDelegate.swift in Sources */,
+				3AD91C9A1E4F679D00966A8C /* ExtensionArticlesViewController+TableViewDataSource+TableViewDelegate.swift in Sources */,
 				3A471A8E1E33AD9100205CA3 /* BaseClass.swift in Sources */,
-				3AAA75DB1E3CE43A007DBB8D /* BooksViewControlller + BooksDataProviderProtocol.swift in Sources */,
 				3A6EEC611E33E52400E4599E /* ArtigosRouters.swift in Sources */,
 				3A7A53491E4649140067B6AC /* API.swift in Sources */,
 				3A7A53451E462E710067B6AC /* Account.swift in Sources */,
