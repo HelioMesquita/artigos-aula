@@ -14,13 +14,9 @@ import ASProgressHud
 class ArticleViewController: UIViewController{
 
     
-    var selectedRow:Int?
     @IBOutlet weak var tableView: UITableView!
     
-    
-    
-    let urlString = "https://newsapi.org/v1/articles?source=techcrunch&apiKey=0126aaf314494c16bb346a34f514d770"
-    
+    var selectedRow:Int?
     let dataProvider = ArticlesDataProvider()
     var articles:ArticlesViewModel?
     
@@ -33,11 +29,12 @@ class ArticleViewController: UIViewController{
         self.dataProvider.delegate = self
         self.dataProvider.getAllArticles()
         
+        LoadingView.showLoading(viewzinha: self.view)
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 

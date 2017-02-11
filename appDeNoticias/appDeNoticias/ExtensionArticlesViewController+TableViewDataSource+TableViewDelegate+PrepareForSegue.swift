@@ -13,8 +13,6 @@ import UIKit
 
 extension ArticleViewController: UITableViewDataSource, UITableViewDelegate{
     
-    
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -35,17 +33,15 @@ extension ArticleViewController: UITableViewDataSource, UITableViewDelegate{
         return cell
     }
     
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedRow = indexPath.row
         performSegue(withIdentifier: "DetalhesViewController", sender: nil)
     }
-    
-    
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "DetalhesViewController"{
                 let detalhesViewController = segue.destination as! DetalhesViewController
+            
                 articles?.loadArticle(indice: selectedRow!)
          
                 detalhesViewController.recebeNoticia(articleDescription: (articles?.description)!)
@@ -53,11 +49,5 @@ extension ArticleViewController: UITableViewDataSource, UITableViewDelegate{
             
         }
     }
-    
-    
-    
-    
-    
-    
     
 }

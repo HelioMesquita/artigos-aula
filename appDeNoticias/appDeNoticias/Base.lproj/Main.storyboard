@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Article View Controller-->
+        <!--NewsApi.org-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ArticleViewController" customModule="appDeNoticias" customModuleProvider="target" sceneMemberID="viewController">
@@ -26,7 +26,7 @@
                                         <rect key="frame" x="0.0" y="92" width="375" height="102"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VrM-Kr-dYI" id="oV0-zX-KFM">
-                                            <frame key="frameInset" width="375" height="102"/>
+                                            <frame key="frameInset" width="375" height="101"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HwN-sX-szT">
@@ -61,7 +61,7 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="aF3-vO-zBc" secondAttribute="trailing" constant="34" id="wnH-0s-Pb4"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.8611536869429981" green="0.89067107222308683" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.95275717690672512" green="0.96872254945965053" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="newsAuthor" destination="ZY7-Ew-u9G" id="kuX-71-c1k"/>
                                             <outlet property="newsImage" destination="HwN-sX-szT" id="3IW-hl-mE6"/>
@@ -79,7 +79,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7vn-A2-CmP" secondAttribute="bottom" id="zCf-BK-asM"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="meL-TZ-CtW"/>
+                    <navigationItem key="navigationItem" title="NewsApi.org" id="meL-TZ-CtW"/>
                     <connections>
                         <outlet property="tableView" destination="7vn-A2-CmP" id="qik-Bf-80K"/>
                         <segue destination="HLY-PN-Cuc" kind="show" identifier="DetalhesViewController" id="br6-mE-eKS"/>
@@ -122,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jca-NM-7De" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1824.8" y="122.78860569715144"/>
+            <point key="canvasLocation" x="1774" y="123"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XHI-k7-Rul">
@@ -140,7 +140,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="os5-K6-bcr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+            <point key="canvasLocation" x="334" y="123"/>
         </scene>
     </scenes>
 </document>

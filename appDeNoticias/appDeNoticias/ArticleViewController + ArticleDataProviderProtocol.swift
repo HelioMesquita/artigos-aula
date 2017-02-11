@@ -10,8 +10,8 @@ import Foundation
 
 
 extension ArticleViewController: ArticlesDataProviderProtocol{
+
     internal func fail() {
-        
     }
 
    
@@ -19,6 +19,7 @@ extension ArticleViewController: ArticlesDataProviderProtocol{
         print(viewModel)
         articles = viewModel
         tableView.reloadData()
+        LoadingView.hideLoading(viewzinha: self.view)
     }
     
     

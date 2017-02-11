@@ -42,14 +42,11 @@ class ArticlesViewModel{
         return UIImage(data: data!)!
     }
     
-
-    
     var numberOfRows:Int{
         // é igual a um if let porem é possivel acessar a variavel de fora
         guard let count = self.arrayArticles?.count else {return 0}
         return count
     }
-    
     
     init(arrayArticleLoad:[Articles]) {
         self.arrayArticles = arrayArticleLoad
