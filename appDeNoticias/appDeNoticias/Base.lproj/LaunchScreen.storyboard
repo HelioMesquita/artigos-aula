@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +17,32 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iOP-CL-7pi"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news2" translatesAutoresizingMaskIntoConstraints="NO" id="ejo-4E-dkL"/>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iOP-CL-7pi" secondAttribute="trailing" id="1gY-AL-TF8"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="iOP-CL-7pi" secondAttribute="bottom" id="7m0-IR-7fC"/>
+                            <constraint firstItem="ejo-4E-dkL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="JmE-1y-7Xd"/>
+                            <constraint firstItem="iOP-CL-7pi" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="aY6-Fg-c2N"/>
+                            <constraint firstItem="ejo-4E-dkL" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="n8n-6T-vnf"/>
+                            <constraint firstItem="ejo-4E-dkL" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="rbV-eu-1nb"/>
+                            <constraint firstAttribute="bottom" secondItem="ejo-4E-dkL" secondAttribute="bottom" id="smo-CS-ViJ"/>
+                            <constraint firstItem="iOP-CL-7pi" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="wQ1-JI-UZP"/>
+                            <constraint firstAttribute="trailing" secondItem="ejo-4E-dkL" secondAttribute="trailing" id="wZk-ib-pyB"/>
+                            <constraint firstItem="ejo-4E-dkL" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="z8z-62-spK"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="news" width="800" height="450"/>
+        <image name="news2" width="853" height="720"/>
+    </resources>
 </document>

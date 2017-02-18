@@ -6,8 +6,15 @@ target 'appDeNoticias' do
   use_frameworks!
 
   # Pods for appDeNoticias
+
 pod 'SwiftyJSON'
 pod 'Alamofire'
 pod 'ALLoadingView'
-pod "ASProgressHud"
+pod 'ASProgressHud'
+pod 'Firebase'
+pod 'Firebase/Analytics'
+pod 'Firebase/AppIndexing'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
+
 end

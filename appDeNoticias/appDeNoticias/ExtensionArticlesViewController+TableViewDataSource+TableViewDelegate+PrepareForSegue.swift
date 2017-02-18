@@ -27,6 +27,7 @@ extension ArticleViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ArticlesCell", for: indexPath) as! CustomCell
         
+        
         articles?.loadArticle(indice: indexPath.row)
         cell.loadCell(recebeArticleViewModel: articles!)
         

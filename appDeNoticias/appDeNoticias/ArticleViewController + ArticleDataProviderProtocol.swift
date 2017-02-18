@@ -15,13 +15,14 @@ extension ArticleViewController: ArticlesDataProviderProtocol{
     }
 
    
-    func success(viewModel: ArticlesViewModel) {
+    func success<T>(viewModel: T) {
         print(viewModel)
-        articles = viewModel
+        guard let currentVM = viewModel as? ArticlesViewModel else {return}
+        articles = currentVM
         tableView.reloadData()
         LoadingView.hideLoading(viewzinha: self.view)
     }
     
-    
+   
     
 }

@@ -9,10 +9,14 @@
 import UIKit
 import Alamofire
 import ASProgressHud
+import FirebaseAuth
 
 
 class ArticleViewController: UIViewController{
 
+    @IBAction func logoutButton(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
+    }
     
     @IBOutlet weak var tableView: UITableView!
     

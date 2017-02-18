@@ -20,12 +20,19 @@
 		3A7A53471E4630060067B6AC /* ArticlesAPIStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A53461E4630060067B6AC /* ArticlesAPIStore.swift */; };
 		3A7A53491E4649140067B6AC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A53481E4649140067B6AC /* API.swift */; };
 		3A7A534C1E465B120067B6AC /* ArticlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7A534B1E465B120067B6AC /* ArticlesViewModel.swift */; };
+		3A8B03C61E586C780037FD8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A8B03C51E586C780037FD8C /* GoogleService-Info.plist */; };
+		3A8B03C91E586E840037FD8C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B03C81E586E840037FD8C /* SignInViewController.swift */; };
+		3A8B03CF1E587AB60037FD8C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B03CE1E587AB60037FD8C /* SignUpViewController.swift */; };
+		3A8B03D21E587CFA0037FD8C /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B03D11E587CFA0037FD8C /* FirstScreenViewController.swift */; };
+		3A8B03D51E5883950037FD8C /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B03D41E5883950037FD8C /* Extension.swift */; };
+		3A8B03DA1E589A9E0037FD8C /* SignInDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B03D91E589A9E0037FD8C /* SignInDataProvider.swift */; };
+		3A8B03DC1E589AAD0037FD8C /* SignUpDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B03DB1E589AAD0037FD8C /* SignUpDataProvider.swift */; };
+		3A8B03DE1E58A40B0037FD8C /* ExtensionSignInDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8B03DD1E58A40B0037FD8C /* ExtensionSignInDataProviderProtocol.swift */; };
 		3AA933571E4F75ED0078373C /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA933561E4F75ED0078373C /* CustomCell.swift */; };
 		3AAA75CE1E3CD782007DBB8D /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA75CD1E3CD782007DBB8D /* LoadingView.swift */; };
 		3AAA75D11E3CDCAA007DBB8D /* ArticlesDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA75D01E3CDCAA007DBB8D /* ArticlesDataProvider.swift */; };
 		3AAA75D31E3CDCD4007DBB8D /* BaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA75D21E3CDCD4007DBB8D /* BaseProtocol.swift */; };
 		3AAA75D51E3CE0BF007DBB8D /* ArticleViewController + ArticleDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA75D41E3CE0BF007DBB8D /* ArticleViewController + ArticleDataProviderProtocol.swift */; };
-		3AAA75D91E3CE3E0007DBB8D /* BooksDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AAA75D81E3CE3E0007DBB8D /* BooksDataProvider.swift */; };
 		3AD91C9A1E4F679D00966A8C /* ExtensionArticlesViewController+TableViewDataSource+TableViewDelegate+PrepareForSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD91C991E4F679D00966A8C /* ExtensionArticlesViewController+TableViewDataSource+TableViewDelegate+PrepareForSegue.swift */; };
 		3AD91C9C1E4F6A8A00966A8C /* DetalhesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD91C9B1E4F6A8A00966A8C /* DetalhesViewController.swift */; };
 		45B9C782920ECB8A239B70E3 /* Pods_appDeNoticias.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE3BFB241623CF24B4A37A66 /* Pods_appDeNoticias.framework */; };
@@ -47,12 +54,19 @@
 		3A7A53461E4630060067B6AC /* ArticlesAPIStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesAPIStore.swift; sourceTree = "<group>"; };
 		3A7A53481E4649140067B6AC /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		3A7A534B1E465B120067B6AC /* ArticlesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesViewModel.swift; sourceTree = "<group>"; };
+		3A8B03C51E586C780037FD8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3A8B03C81E586E840037FD8C /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		3A8B03CE1E587AB60037FD8C /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3A8B03D11E587CFA0037FD8C /* FirstScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
+		3A8B03D41E5883950037FD8C /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		3A8B03D91E589A9E0037FD8C /* SignInDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInDataProvider.swift; sourceTree = "<group>"; };
+		3A8B03DB1E589AAD0037FD8C /* SignUpDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpDataProvider.swift; sourceTree = "<group>"; };
+		3A8B03DD1E58A40B0037FD8C /* ExtensionSignInDataProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionSignInDataProviderProtocol.swift; sourceTree = "<group>"; };
 		3AA933561E4F75ED0078373C /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		3AAA75CD1E3CD782007DBB8D /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		3AAA75D01E3CDCAA007DBB8D /* ArticlesDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesDataProvider.swift; sourceTree = "<group>"; };
 		3AAA75D21E3CDCD4007DBB8D /* BaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseProtocol.swift; sourceTree = "<group>"; };
 		3AAA75D41E3CE0BF007DBB8D /* ArticleViewController + ArticleDataProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ArticleViewController + ArticleDataProviderProtocol.swift"; sourceTree = "<group>"; };
-		3AAA75D81E3CE3E0007DBB8D /* BooksDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksDataProvider.swift; sourceTree = "<group>"; };
 		3AD91C991E4F679D00966A8C /* ExtensionArticlesViewController+TableViewDataSource+TableViewDelegate+PrepareForSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ExtensionArticlesViewController+TableViewDataSource+TableViewDelegate+PrepareForSegue.swift"; sourceTree = "<group>"; };
 		3AD91C9B1E4F6A8A00966A8C /* DetalhesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalhesViewController.swift; sourceTree = "<group>"; };
 		5927930728FD65CD3796D84B /* Pods-appDeNoticias.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appDeNoticias.debug.xcconfig"; path = "Pods/Target Support Files/Pods-appDeNoticias/Pods-appDeNoticias.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,20 +116,19 @@
 		3A471A781E33ABEC00205CA3 /* appDeNoticias */ = {
 			isa = PBXGroup;
 			children = (
+				3A6EEC5D1E33E12E00E4599E /* Network */,
 				3AAA75CF1E3CDC77007DBB8D /* DataProvider */,
 				3AAA75CC1E3CD097007DBB8D /* Helpers */,
-				3A6EEC5D1E33E12E00E4599E /* Network */,
 				3A6EEC5C1E33E12500E4599E /* Manager */,
 				3A7A534A1E465ACF0067B6AC /* ViewModel */,
 				3A6EEC5B1E33E03E00E4599E /* Storyboard */,
 				3A6EEC5A1E33E02E00E4599E /* Models */,
 				3A471A791E33ABEC00205CA3 /* AppDelegate.swift */,
-				3A471A7B1E33ABEC00205CA3 /* ArticleViewController.swift */,
-				3AAA75D41E3CE0BF007DBB8D /* ArticleViewController + ArticleDataProviderProtocol.swift */,
-				3AD91C991E4F679D00966A8C /* ExtensionArticlesViewController+TableViewDataSource+TableViewDelegate+PrepareForSegue.swift */,
+				3A8B03C71E586E080037FD8C /* ViewController */,
+				3A8B03D31E5883820037FD8C /* Extension */,
 				3A471A801E33ABED00205CA3 /* Assets.xcassets */,
 				3A471A851E33ABED00205CA3 /* Info.plist */,
-				3AD91C9B1E4F6A8A00966A8C /* DetalhesViewController.swift */,
+				3A8B03C51E586C780037FD8C /* GoogleService-Info.plist */,
 			);
 			path = appDeNoticias;
 			sourceTree = "<group>";
@@ -182,6 +195,93 @@
 			name = ViewModel;
 			sourceTree = "<group>";
 		};
+		3A8B03C71E586E080037FD8C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3A8B03D01E587CCB0037FD8C /* FirstScreen */,
+				3A8B03CD1E587A130037FD8C /* SignUpVC */,
+				3A8B03CC1E587A070037FD8C /* SignInVC */,
+				3A8B03CB1E5879FC0037FD8C /* DetailsVC */,
+				3A8B03CA1E5879EF0037FD8C /* ArticlesVC */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		3A8B03CA1E5879EF0037FD8C /* ArticlesVC */ = {
+			isa = PBXGroup;
+			children = (
+				3A471A7B1E33ABEC00205CA3 /* ArticleViewController.swift */,
+				3AAA75D41E3CE0BF007DBB8D /* ArticleViewController + ArticleDataProviderProtocol.swift */,
+				3AD91C991E4F679D00966A8C /* ExtensionArticlesViewController+TableViewDataSource+TableViewDelegate+PrepareForSegue.swift */,
+			);
+			name = ArticlesVC;
+			sourceTree = "<group>";
+		};
+		3A8B03CB1E5879FC0037FD8C /* DetailsVC */ = {
+			isa = PBXGroup;
+			children = (
+				3AD91C9B1E4F6A8A00966A8C /* DetalhesViewController.swift */,
+			);
+			name = DetailsVC;
+			sourceTree = "<group>";
+		};
+		3A8B03CC1E587A070037FD8C /* SignInVC */ = {
+			isa = PBXGroup;
+			children = (
+				3A8B03C81E586E840037FD8C /* SignInViewController.swift */,
+				3A8B03DD1E58A40B0037FD8C /* ExtensionSignInDataProviderProtocol.swift */,
+			);
+			name = SignInVC;
+			sourceTree = "<group>";
+		};
+		3A8B03CD1E587A130037FD8C /* SignUpVC */ = {
+			isa = PBXGroup;
+			children = (
+				3A8B03CE1E587AB60037FD8C /* SignUpViewController.swift */,
+			);
+			name = SignUpVC;
+			sourceTree = "<group>";
+		};
+		3A8B03D01E587CCB0037FD8C /* FirstScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3A8B03D11E587CFA0037FD8C /* FirstScreenViewController.swift */,
+			);
+			name = FirstScreen;
+			sourceTree = "<group>";
+		};
+		3A8B03D31E5883820037FD8C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3A8B03D41E5883950037FD8C /* Extension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		3A8B03D61E589A180037FD8C /* Articles */ = {
+			isa = PBXGroup;
+			children = (
+				3AAA75D01E3CDCAA007DBB8D /* ArticlesDataProvider.swift */,
+			);
+			name = Articles;
+			sourceTree = "<group>";
+		};
+		3A8B03D71E589A320037FD8C /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				3A8B03DB1E589AAD0037FD8C /* SignUpDataProvider.swift */,
+			);
+			name = SignIn;
+			sourceTree = "<group>";
+		};
+		3A8B03D81E589A3A0037FD8C /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				3A8B03D91E589A9E0037FD8C /* SignInDataProvider.swift */,
+			);
+			name = SignUp;
+			sourceTree = "<group>";
+		};
 		3AAA75CC1E3CD097007DBB8D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,9 +293,10 @@
 		3AAA75CF1E3CDC77007DBB8D /* DataProvider */ = {
 			isa = PBXGroup;
 			children = (
-				3AAA75D01E3CDCAA007DBB8D /* ArticlesDataProvider.swift */,
 				3AAA75D21E3CDCD4007DBB8D /* BaseProtocol.swift */,
-				3AAA75D81E3CE3E0007DBB8D /* BooksDataProvider.swift */,
+				3A8B03D71E589A320037FD8C /* SignIn */,
+				3A8B03D81E589A3A0037FD8C /* SignUp */,
+				3A8B03D61E589A180037FD8C /* Articles */,
 			);
 			name = DataProvider;
 			sourceTree = "<group>";
@@ -271,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A471A841E33ABED00205CA3 /* LaunchScreen.storyboard in Resources */,
+				3A8B03C61E586C780037FD8C /* GoogleService-Info.plist in Resources */,
 				3A471A811E33ABED00205CA3 /* Assets.xcassets in Resources */,
 				3A471A7F1E33ABEC00205CA3 /* Main.storyboard in Resources */,
 			);
@@ -335,15 +437,21 @@
 				3A7A53431E462A5D0067B6AC /* ArticlesStore.swift in Sources */,
 				3A7A53471E4630060067B6AC /* ArticlesAPIStore.swift in Sources */,
 				3AAA75D11E3CDCAA007DBB8D /* ArticlesDataProvider.swift in Sources */,
+				3A8B03D21E587CFA0037FD8C /* FirstScreenViewController.swift in Sources */,
+				3A8B03C91E586E840037FD8C /* SignInViewController.swift in Sources */,
 				3AA933571E4F75ED0078373C /* CustomCell.swift in Sources */,
+				3A8B03DC1E589AAD0037FD8C /* SignUpDataProvider.swift in Sources */,
 				3AAA75D51E3CE0BF007DBB8D /* ArticleViewController + ArticleDataProviderProtocol.swift in Sources */,
+				3A8B03DA1E589A9E0037FD8C /* SignInDataProvider.swift in Sources */,
 				3AAA75D31E3CDCD4007DBB8D /* BaseProtocol.swift in Sources */,
 				3AAA75CE1E3CD782007DBB8D /* LoadingView.swift in Sources */,
-				3AAA75D91E3CE3E0007DBB8D /* BooksDataProvider.swift in Sources */,
 				3AD91C9C1E4F6A8A00966A8C /* DetalhesViewController.swift in Sources */,
 				3A471A8D1E33AD9100205CA3 /* Articles.swift in Sources */,
 				3A7A534C1E465B120067B6AC /* ArticlesViewModel.swift in Sources */,
 				3A471A7A1E33ABEC00205CA3 /* AppDelegate.swift in Sources */,
+				3A8B03DE1E58A40B0037FD8C /* ExtensionSignInDataProviderProtocol.swift in Sources */,
+				3A8B03D51E5883950037FD8C /* Extension.swift in Sources */,
+				3A8B03CF1E587AB60037FD8C /* SignUpViewController.swift in Sources */,
 				3AD91C9A1E4F679D00966A8C /* ExtensionArticlesViewController+TableViewDataSource+TableViewDelegate+PrepareForSegue.swift in Sources */,
 				3A471A8E1E33AD9100205CA3 /* BaseClass.swift in Sources */,
 				3A6EEC611E33E52400E4599E /* ArtigosRouters.swift in Sources */,
